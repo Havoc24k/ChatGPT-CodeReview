@@ -18,7 +18,7 @@ export class Chat {
       ? `Answer me in ${process.env.LANGUAGE},`
       : '';
 
-    return `Bellow is the code patch, please help me do a brief code review,${answerLanguage} if any bug risk and improvement suggestion are welcome
+    return `Bellow is the code patch, please help me do an analytical and strict code review,${answerLanguage} if any bug risk and improvement suggestion are welcome
     ${patch}
     `;
   };
