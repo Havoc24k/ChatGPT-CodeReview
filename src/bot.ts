@@ -94,7 +94,7 @@ export const robot = (app: Probot) => {
         const file = changedFiles[i];
         const patch = file.patch || '';
 
-        if(file.status !== 'modified' && file.status !== 'added') {
+        if (file.status !== 'modified' && file.status !== 'added') {
           continue;
         }
 

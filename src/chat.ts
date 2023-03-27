@@ -15,10 +15,10 @@ export class Chat {
 
   private generatePrompt = (patch: string) => {
     const answerLanguage = process.env.LANGUAGE
-      ? `Answer me in ${process.env.LANGUAGE},`
-      : '';
+      ? `${process.env.LANGUAGE},`
+      : 'English';
 
-    return `Bellow is the code patch, please help me do an analytical and strict code review,${answerLanguage} if any bug risk and improvement suggestion are welcome
+    return `Please help me do an analytical and strict code review. In your review include security risks, improvements, and suggestions based on best practises. The answer should be in ${answerLanguage}.
     ${patch}
     `;
   };
