@@ -18,7 +18,7 @@ export class Chat {
       ? `${process.env.LANGUAGE},`
       : 'English';
 
-    return `Please help me do an analytical and strict code review. In your review include security risks, improvements, and suggestions based on best practises. The answer should be in ${answerLanguage}.
+    return `Please help me do an analytical and strict code review. In your review include security risks, improvements, and suggestions based on best practices. The answer should be in ${answerLanguage}.
     ${patch}
     `;
   };
